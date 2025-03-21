@@ -1,0 +1,13 @@
+# Redirects
+[[redirects]]
+  from = "/old-url"
+  to = "/"
+  status = 301
+
+# Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Cache-Control = "public, max-age=604800"
